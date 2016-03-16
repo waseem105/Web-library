@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+
+    <html>
+    
+        <head>
+            
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>The Guardian</title>
+            <meta name="description" content="mock-up of the Guardian website">
+            
+        <style>
+
+           body {
+               padding:0;
+               margin: 0;
+               font-family: Georgia, serif;
+               background-color: #f5f5f5;
+           }
+
+            #container {
+                padding: 0;
+                margin: 0;
+            }
+
+            .fixed-width {
+                width:1050px;
+            }
+
+            .clear {
+                clear: both;
+            }
+
+            p {
+                font-size: 0.8em;
+                color: darkgray;
+            }
+
+            #social {
+                width: 30px;
+            }
+
+/* -------------------- Header styling --------------------*/
+
+            #header {
+                height: 128px;
+                width:100%;
+                background-color:#005689;
+                margin: 0;
+                padding: 0 0 8px 0;
+            }
+
+            #topbar {
+                height: 48px;
+                background-color: #005689;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+            #topbar-left ul {
+                float: left;
+                margin: 15px 0 0 0;
+                padding: 0;
+            }
+
+            #topbar-left li {
+                float: left;
+            }
+
+            #topbar-left img {
+                height: 30px;
+                padding: 0;
+                margin: 0;
+            }
+            
+            #topbar-right ul {
+                float: right;
+            }
+
+            #topbar .topright li {
+                float: left;
+            }
+
+            #topbar ul {
+                list-style: none;
+            }
+
+            #topbar li {
+                padding: 0 5px;
+            }
+
+            #topbar a {
+                text-decoration: none;
+                color: white;
+                font-size: 0.9em;
+            }
+
+            #topbar a:hover {
+                text-decoration: underline;
+            }
+
+            #mainlogo {
+                margin: 0 auto;
+                padding: 0;
+               
+            }
+
+            #mainlogo img {
+                height:60px;
+                float: right;
+                padding-right: 15px;
+                margin: 0;
+            }
+
+
+/* -------------------- Main menu bars styling --------------------*/
+
+            #middlebar-background {
+                height:37px;
+                width:100%;
+                background-color: #00507f;
+                margin: 0;
+                padding: 0;
+            }
+
+             #middle-menu a:hover {
+                text-decoration: underline;
+            }
+
+            #middle-menu {
+                height:37px;
+                background-color: #00456e;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 1.0em;
+            }
+
+            #middle-menu ul {
+                list-style: none;
+                padding: 0 0 0 5px;
+                margin: 0;
+            }
+
+            #middle-menu a {
+                float: left;
+                color: white;
+                text-decoration: none;
+                padding: 7px 8px 4px 8px;  
+                font-weight: 400;
+            }
+
+            #menu-black {
+                float: right;
+            }
+
+            #menu-black li {
+                float:left;
+            }
+
+            #hamburger {
+                height:26px;
+                float:right;
+                background-color: #333;
+            }
+
+           /* #hamburger a {
+                float: right;
+            }*/
+
+            #hamburger a:hover {
+                text-decoration: none;
+                color: red;
+            }
+
+            #last-item a {
+                background-color: #333;
+                height: 25px;
+                padding-left: 5px;
+                float: right;
+            }
+
+            #bottombar-background {
+                height:37px;
+                width:100%;
+                background-color: #e5e5e5;
+                margin: 0;
+                padding: 0;
+            }
+
+             #bottom-menu {
+                height:37px;
+                background-color: #dfdfdf;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 1em;
+            }
+
+             #bottom-menu ul {
+                list-style: none;
+                padding: 0 0 0 5px;
+                margin: 0;
+            }
+
+            .submenu a {
+                float: left;
+                text-decoration: none;
+                padding: 8px 8px 10px 8px; 
+            }
+
+            .menu-item-blue a {
+                color: #005689;
+            }
+
+            .chevron {
+                color: gray;
+            }
+            
+            .menu-item-black a {
+                color: #333;
+            }
+
+            .submenu a:hover {
+                text-decoration: underline;
+            }
+            
+            .submenu .chevron a:hover {
+                text-decoration: none;
+            }
+
+            .submenu .slash a  {
+                border-right: 1px solid #f3f3f3;
+            }
+            
+
+/* -------------------- Content & sidebar styling --------------------*/
+
+            #content {
+                margin: 0 auto;
+/*                border-top: 2px solid red;*/
+                padding: 10px 0 0 0;
+                background-color: white;
+                height: 1000px;
+            }
+
+            #side-bar {
+                width: 137px;
+                height: 582px;
+                margin: 0 10px 0 20px;
+                background-color:white;
+                float: left;
+                border-top: 1px solid #4bc6df;
+                padding: 0;
+            }
+
+            #side-bar h3 {
+                padding: 0;
+                margin: 5px 0 0 0px;
+                color:#005689;
+            }
+
+
+/* -------------------- Main feature styling --------------------*/
+
+
+            #content-after-side-bar {
+                float: right;
+                width: 883px;
+            }
+            
+            #content-after-side-bar h2, h3, h4, h5 {
+                color: #333;
+            }
+
+            .main-feature-frame {
+                padding: 10px;
+                margin: 0;
+                background-color: white;
+                height: auto;
+                width: 441px;
+                float: left;
+            }
+
+            #main-feature {
+
+                margin: 0 auto;
+                padding:  0 0 0 0;
+                background-color:#eaeaea;
+                width: 421px;
+                height: 335px;
+                border-top: 1px solid #4bc6df;
+                position: relative;
+            }
+            
+            .news-item:hover {
+                background-color: #f6f6f6;
+            }
+            
+            #main-feature:hover {
+                background-color: #f6f6f6;
+            }
+
+            #main-feature h3 {
+                margin: 0;
+                padding: 0 5px;
+                color: #333;
+            }
+
+            #main-feature p {
+
+                color:#767676;
+            }
+
+            #main-feature img {
+                width: 421px;
+            }
+            
+            .blue-text {
+                color: #005689;
+            }
+            
+            .slash {
+                color: lightgray;
+            }
+
+            .social  {
+                height: 30px;
+                width: 150px;
+                margin: 0 2px;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color:#767676;
+                font-size: 0.8em;
+                position: absolute;
+                bottom: 0px;
+                left: 3px;
+                float: left;
+            }
+
+            .social img {
+                width: 14px !important;
+                float: left;
+                padding: 11px 4px 0 0;
+                margin: 0;
+            }
+
+            .social .count {
+                float: left;
+                padding: 0 8px 0 0;
+                margin: 12px 0 0 0;
+                border-right: 1px solid lightgray;
+            }
+
+            .social #bookmark  {
+                float: left;
+                height: 18px;
+                width: 11px !important;
+                padding: 0 0 0 3px;
+                margin: 10px 0 0 5px;
+            }
+
+/* -------------------- Sub-feature styling --------------------*/
+
+
+            .sub-feature-frame {
+                padding: 10px;
+                margin: 0;
+                background-color: white;
+                height: auto;
+                width: 220px;
+                float: left;
+                border-left: 1px solid lightgray;
+            }
+
+            .far-right {
+                border-right: none;
+            }
+
+            .sub-feature {
+                margin: 0 auto;
+                padding: 0;
+                background-color:#eaeaea;
+                width: 200px;
+                height: 335px;
+                border-top: 1px solid #4bc6df;   
+                position: relative;
+            }
+
+            .sub-feature img {
+                width: 200px;
+            }
+
+             .sub-feature #bubble img {
+                width: 20px;
+            }
+
+            .sub-feature h4 {
+                margin: 0 0 0 5px;
+                padding: 0;
+                color: #333;
+            }
+
+            .sub-feature p {
+
+                padding: 0 0 0 5px;
+                margin: 9px 0 0 0;
+                color:#767676;
+            }
+
+/* -------------------- Minor-feature styling --------------------*/        
+
+
+
+            #minor-boxes {
+
+                border-top: 10px solid white;
+                height: auto;
+                width: 883px;
+                float: left;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .minor-feature-frame {
+
+                float: left;
+                height: auto;
+                width: auto;
+                background-color: white;
+                padding: 0 10px 10px 10px;
+                border-left: 1px solid lightgray;
+            }
+
+           .left-col {
+                border-left: none;
+            }
+
+            .minor-feature {
+                background-color:#eaeaea; 
+                height: 90px;
+                width: 200px;
+                border-top: 1px solid #4bc6df; 
+                float: left;
+                position: relative;
+            }
+
+            .minor-feature h5 {
+                padding: 0;
+                margin: 5px;
+                color: #333;
+            }
+            
+            .minor-feature p {
+                color: #767676;
+            }
+            
+            
+
+/* -------------------- End of styles --------------------*/                     
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="header">
+
+            <div id="topbar" class="fixed-width">  
+
+                <div id="topbar-left">
+
+                    <ul class="topleft">
+
+                        <li><img id="login-img" src="images/login.png"></li>
+
+                        <li class="bar-item-text"><a href="">ID27888 &#9662</a></li>
+
+                        <li><img src="images/glogo.png"></li>
+
+                        <li class="bar-item-text"><a href="">subscribe</a></li>
+
+                        <li><img id="magnify-img" src="images/magnify.png"></li>
+
+                        <li class="bar-item-text"><a href="">search</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div id="topbar-right">
+
+                    <ul class="topright">
+
+                        <li><a href="">jobs</a></li>
+
+                        <li><a href="">dating</a></li>
+
+                        <li><a href="">more &#9662</a></li>
+
+                        <li><a href="">UK edition &#9662</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <br .clear>
+
+            <div id=mainlogo class="fixed-width">
+
+                <img src="images/mainlogo.png">
+
+            </div>
+
+        </div>
+        
+        
+        
+
+        <div id="menu-bars">
+
+            <div id="middlebar-background">   
+
+                <div id="middle-menu" class="fixed-width">
+
+                    <div id="menu-blue">
+
+                        <ul id="menu">
+
+                            <li class="menu-item"><a href=""><img id="home" src=images/home.png></a></li>
+                            <li class="menu-item"><a href="">election 2016</a></li>
+                            <li class="menu-item"><a href="">US</a></li>
+                            <li class="menu-item"><a href="">world</a></li>
+                            <li class="menu-item"><a href="">opinion</a></li>
+                            <li class="menu-item"><a href="">sports</a></li>
+                            <li class="menu-item"><a href="">soccer</a></li>
+                            <li class="menu-item"><a href="">tech</a></li>
+                            <li class="menu-item"><a href="">arts</a></li>
+                            <li class="menu-item"><a href="">lifestyle</a></li>
+                            <li class="menu-item"><a href="">fashion</a></li>
+                            <li class="menu-item"><a href="">business</a></li>
+                            <li class="menu-item"><a href="">travel</a></li>
+                            <li class="menu-item"><a href="">environment</a></li>
+
+                        </ul>
+
+                    </div>  
+
+                    <div id="menu-black">
+
+                        <ul>
+
+                            <li class="menu-item"><a id="hamburger" href="">&#9776;</a></li>
+                            <li class="menu-item" id="last-item"><a href="">all sections</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="bottombar-background">   
+
+                <div id="bottom-menu" class="fixed-width">
+
+                    <ul class="submenu" id="sub-a">
+                        <li class="menu-item-blue"><a href="">home</a></li>
+                        <li class="chevron"><a href="">&rang;</a></li>
+                        <li class="menu-item-blue slash"><a href="">UK</a></li>
+
+                    </ul>
+                    
+                    <ul class="submenu" id="sub-b">
+                        <li class="menu-item-black"><a href="">education</a></li>
+                        <li class="menu-item-black"><a href="">media</a></li>
+                        <li class="menu-item-black"><a href="">society</a></li>
+                        <li class="menu-item-black"><a href="">law</a></li>
+                        <li class="menu-item-black"><a href="">scotland</a></li>
+                        <li class="menu-item-black"><a href="">wales</a></li>
+                        <li class="menu-item-black"><a href="">northern ireland</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+        
+
+
+            <div id="content" class="fixed-width">
+                
+                
+
+                <div id="side-bar">
+
+                    <h3>UK News</h3>
+
+                </div>
+                
+                
+
+                <div id="content-after-side-bar">
+
+                        <div class="main-feature-frame">
+
+                            <div class="feature news-item" id="main-feature" >
+
+                                <img src="images/gphoto1.png">
+
+                                <h3><span class="blue-text">Gift horse</span><span class="slash"> / </span>Owner of photobomb horse demands share of £2,000</h3>
+
+                                <div class="social">
+
+                                    <img id="bubble" src="images/bubble.png">
+
+                                    <p class="count">1,211</p>
+
+                                    <img id="bookmark"  src="images/ribbon.png">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sub-feature-frame">
+
+                            <div id="s-f-1" class="sub-feature news-item">
+
+                                <img src="images/vintage.png">
+
+                                <h4><span class="blue-text">Bradford</span><span class="slash"> / </span>Photography collection move to V&A reviled as 'vandalism'</h4>
+
+                                <p>Local politicians and artists say move signals potential closure ofNational Media Museum and smacks of metropolitanism</p>
+
+                                <div class="social">
+
+                                    <img id="bubble" src="images/bubble.png">
+
+                                    <p class="count">97</p>
+
+                                    <img id="bookmark"  src="images/ribbon.png">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sub-feature-frame far-right">
+
+                            <div id="s-f-2" class="sub-feature news-item">
+
+                                <img src="images/demo.png">
+
+                                <h4><span class="blue-text">Junior doctors' strike</span><span class="slash"> / </span>Jeremy Hunt tells BMA his 'door is open'</h4>
+
+                                <p>Health secretary urges medics' leaders to return to negotiating table ahead of planned walkout on 10 February</p>
+
+                                <div class="social">
+
+                                    <img id="bubble" src="images/bubble.png">
+
+                                    <p class="count">26</p>
+
+                                    <img id="bookmark"  src="images/ribbon.png">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+<!--                        <br class="clear" />-->
+
+                        <div id="minor-boxes">
+
+                            <div class="minor-feature-frame left-col">
+
+                                <div class="minor-feature news-item">
+
+                                <h5><span class="blue-text">India Chipchase</span><span class="slash"> / </span>Northampton man charged with murder</h5>
+
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">89</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="minor-feature-frame">
+
+                                <div class="minor-feature news-item">
+
+                                <h5><span class="blue-text">French Alps</span><span class="slash"> / </span>British woman dies in skiing accident</h5>
+
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">4</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div>
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="minor-feature-frame">
+
+                                <div class="minor-feature news-item">
+
+                                    <h5><span class="blue-text">Joan Bakewell</span><span class="slash"> / </span>No-platforming is 'a step towards book burning'</h5>
+                                   
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">169</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div>
+                                 
+                                </div>
+
+                            </div>
+
+                            <div class="minor-feature-frame">
+
+                                <div class="minor-feature news-item">
+
+                                    <h5><span class="blue-text">Storm Henry</span><span class="slash"> / </span>Roads closed and rail services disrupted across Scotland</h5>
+                                    
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">200</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                           <div class="minor-feature-frame left-col">
+
+                                <div class="minor-feature news-item">
+
+                                    <h5>Black men 'best in Britain' at sharing household chores</h5>
+
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">444</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div> 
+                               
+                               </div>
+
+                            </div>
+
+                            <div class="minor-feature-frame">
+
+                                <div class="minor-feature news-item">
+
+                                    <h5>Protesters march against closure of NHS unit in London that included FGM clinic</h5>
+
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">103</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div> 
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="minor-feature-frame">
+
+                                <div class="minor-feature news-item">
+
+                                    <h5>Armed police storm train after teacher is found dead in Kent</h5>
+
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">45</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div> 
+                                
+                                </div>
+
+                            </div>
+
+                            <div class="minor-feature-frame">
+
+                                <div class="minor-feature news-item">
+
+                                    <h5>Thousands of Three customers face 100% price rise</h5>
+
+                                    <div class="social">
+
+                                        <img id="bubble" src="images/bubble.png">
+
+                                        <p class="count">11</p>
+
+                                        <img id="bookmark"  src="images/ribbon.png">
+
+                                    </div> 
+                                
+                                </div>
+                               
+                            </div> 
+                            
+                        </div>
+                    
+                </div>
+
+            </div>
+
+    </body>
+    
+</html>

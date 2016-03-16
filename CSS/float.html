@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+ <head>
+ <title>Learning CSS</title>
+
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+ <style type="text/css">
+
+ .large {
+ font-size:200%;
+ padding:25px;
+ }
+
+ #green {
+ color:green;
+ }
+
+ .underline {
+ text-decoration:underline;
+ }
+ 
+ .bold {
+ font-weight:bold;
+ }
+
+ .purplebox {
+ background-color:#B404AE;
+ width:200px;
+ height:200px;
+ float:left;
+ border-radius:180px;
+ }
+
+ .greenbox {
+ background-color:#295715;
+ width:300px;
+ height:100px;
+ float:right;
+ }
+
+ .floatleft {
+ float:left;
+ }
+
+ .clear {
+ clear:both;
+ }
+
+ </style>
+ 
+ <script type="text/javascript" src="jquery.min.js"></script>
+ 
+ </head>
+
+ <body>
+
+ <div class="purplebox">
+
+ <p class="large">This is some text.</p>
+
+ </div>
+
+ <div class="greenbox">
+
+ <p>This is some more text.</p>
+
+ </div>
+
+ <div class="clear"></div>
+
+ <p class="floatleft">The third <span class="underline large bold">word</
+span> in this paragraph is underlined.</p>
+
+
+<script>
+
+ $("#purplebox").click(function() {
+
+$("p").html("thetext has been changed");
+
+
+ });
+
+ </script>
+ </body>
+</html>
